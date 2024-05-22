@@ -39,7 +39,7 @@ public class SeleniumTest {
     public void testHomePageTitle() {
         driver.get("https://test.k6.io/");
         String title = driver.getTitle();
-        assertEquals("Test site | k6", title);
+        assertEquals("Demo website for load testing", title);
     }
 
     @Test
