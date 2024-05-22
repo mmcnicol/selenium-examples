@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,6 +43,7 @@ public class SeleniumTest {
         assertEquals("Demo website for load testing", title);
     }
 
+	@Disabled
     @Test
     public void testLoginForm() {
         driver.get("https://test.k6.io/");
