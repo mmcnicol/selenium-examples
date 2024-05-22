@@ -20,7 +20,9 @@ public class SeleniumTest {
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
-        URL gridUrl = new URL("http://localhost:4444/wd/hub");
+		
+        //URL gridUrl = new URL("http://localhost:4444/wd/hub");
+		URL gridUrl = new URL("http://selenium-hub.default.svc.cluster.local:4444/wd/hub");
         ChromeOptions options = new ChromeOptions();
         driver = new RemoteWebDriver(gridUrl, options);
         driver.manage().window().maximize();
